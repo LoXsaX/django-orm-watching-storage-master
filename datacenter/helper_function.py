@@ -15,7 +15,7 @@ def format_time(deltatime):
     seconds = deltatime.total_seconds()
     minutes, seconds = divmod(seconds, quantity)
     hours, minutes = divmod(minutes, quantity)
-    return f"{hours}:{minutes}:{seconds}"
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
 
 def is_visit_long(delta_time, minutes=60):
