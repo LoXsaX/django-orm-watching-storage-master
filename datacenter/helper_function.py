@@ -19,7 +19,7 @@ def format_time(deltatime):
 
 
 def is_visit_long(delta_time, minutes=60):
-    quanity = 60
-    seconds = minutes * quanity
+    quantity = 60
+    seconds = minutes * quantity
     long_visit = delta_time.total_seconds() > seconds
     return long_visit
