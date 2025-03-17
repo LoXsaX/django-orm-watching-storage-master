@@ -4,9 +4,9 @@ from django.utils.timezone import localtime, now
 def time_delta(visit):
     entered_at = localtime(visit.entered_at)
     if visit.leaved_at:
-        delta_time = localtime(now()) - entered_at
-    else:
         delta_time = localtime(visit.leaved_at) - entered_at
+    else:
+        delta_time = localtime(now()) - entered_at
     return delta_time
 
 
